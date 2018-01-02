@@ -263,17 +263,6 @@ Wire Wire Line
 	8800 3450 8800 3500
 Wire Wire Line
 	8800 3500 8850 3500
-$Comp
-L Custom:SN74LVC2G132DCUR U3
-U 1 1 5A46B31A
-P 9250 3200
-F 0 "U3" V 9400 3400 50  0000 R CNN
-F 1 "Double NAND" V 9600 3100 50  0000 R CNN
-F 2 "Custom:VSSOP8_2.4x2.1mm_Pitch0.5mm" H 9250 3200 50  0001 C CNN
-F 3 "" H 9250 3200 50  0001 C CNN
-	1    9250 3200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9200 3450 9200 3500
 Connection ~ 9200 3500
@@ -481,20 +470,6 @@ $EndComp
 Wire Wire Line
 	8100 2550 8100 2600
 $Comp
-L Connector:Test_Point TP4
-U 1 1 5A47FF81
-P 9200 2900
-F 0 "TP4" V 9200 3150 50  0000 C CNN
-F 1 "Test_Point" V 9300 3100 50  0000 C CNN
-F 2 "Custom:1.5mm_test_point" H 9400 2900 50  0001 C CNN
-F 3 "~" H 9400 2900 50  0001 C CNN
-	1    9200 2900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9200 2900 9250 2900
-Connection ~ 9250 2900
-$Comp
 L Connector:Test_Point TP1
 U 1 1 5A480F64
 P 3650 1000
@@ -571,4 +546,15 @@ Wire Wire Line
 	6450 950  6450 1000
 Wire Wire Line
 	3300 1000 3650 1000
+$Comp
+L Custom:SN74LVC2G132DCUR U3
+U 1 1 5A46B31A
+P 9250 3200
+F 0 "U3" V 9400 3400 50  0000 R CNN
+F 1 "Double NAND" V 9600 3100 50  0000 R CNN
+F 2 "Custom:VSSOP8_2.4x2.1mm_Pitch0.5mm" H 9250 3200 50  0001 C CNN
+F 3 "" H 9250 3200 50  0001 C CNN
+	1    9250 3200
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
